@@ -1,0 +1,41 @@
+
+body, html {
+        height: 100%;
+        margin: 0;
+      }
+#backround {
+        position: static;
+
+        background-image: url("https://images.pexels.com/photos/164005/pexels-photo-164005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+        height: 100%; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 40%;
+        
+}
+
+#wrapper{
+        min-width: 50%;
+        height: 500px;
+        padding: 10px;
+        background-color: grey;
+        display: inline-block;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 100%;
+        
+        
+       
+      
+      
+}
+
+h1 {
+        text-align: center;
+color: aquamarine;
+}
+
