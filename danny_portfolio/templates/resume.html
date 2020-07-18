@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -7,66 +8,159 @@
         {% load static %}
         <link rel="stylesheet" href="{% static 'style.css' %}">
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        
+
         <script src='main.js'></script>
 </head>
+
 <body>
+
         <div id="header">
-                
-                
-                <img src="https://images.pexels.com/photos/3957982/pexels-photo-3957982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Avatar">
+                <ul>
+
+                        <li><a href="/contact_me">Contact</a></li>
+                        <li><a href="/projects">Projects</a></li>
+                </ul>
+
+                <div id="resume_title">
+                        <h2>Danny Nguyen</h2></br>
+                        <p>Full stack web developer</p>
+                </div>
+
+                <img src="https://images.pexels.com/photos/3957982/pexels-photo-3957982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="Avatar">
 
 
         </div>
         <div id="resume_wrapper">
-        <div id="intro">
-                
-               
-                
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio molestiae delectus corporis, sint accusamus, provident, sequi ipsum sunt ducimus dolore similique! Obcaecati similique vero facere accusantium cum veniam delectus, saepe veritatis, nulla aperiam voluptatibus dolorum esse, non id optio placeat eos. Aut, recusandae? Deserunt quo possimus, commodi pariatur esse laborum quia itaque inventore rem explicabo reprehenderit voluptatibus dicta error optio consequuntur nobis cum dignissimos! Id nisi, fuga provident placeat necessitatibus deleniti sapiente obcaecati vero quae enim maxime voluptate voluptas veritatis. Earum optio reprehenderit repellendus? Culpa suscipit asperiores exercitationem.</p></br>
+                <div id="intro">
 
-                <a href="/images/resume.pdf" download class="resume_buttons">Download My Resume</a>
-                <a href="/resume" class="resume_buttons">Contact Me</a>
-        </div>
-        <div id="experience">
 
-                <h2>Experience</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio molestiae delectus corporis, sint accusamus, provident, sequi ipsum sunt ducimus dolore similique! Obcaecati similique vero facere accusantium cum veniam delectus, saepe veritatis, nulla aperiam voluptatibus dolorum esse, non id optio placeat eos. Aut, recusandae? Deserunt quo possimus, commodi pariatur esse laborum quia itaque inventore rem explicabo reprehenderit voluptatibus dicta error optio consequuntur nobis cum dignissimos! Id nisi, fuga provident placeat necessitatibus deleniti sapiente obcaecati vero quae enim maxime voluptate voluptas veritatis. Earum optio reprehenderit repellendus? Culpa suscipit asperiores exercitationem.</p></br>
-                
-                <div class="timeline">
-                        <div class="container left">
-                          <div class="content">
-                            <h2>2017</h2>
-                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                          </div>
-                        </div>
-                        <div class="container right">
-                          <div class="content">
-                            <h2>2016</h2>
-                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                          </div>
-                        </div>
-                        <div class="container left">
-                          <div class="content">
-                            <h2>2015</h2>
-                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                          </div>
-                        </div>
-                        <div class="container right">
-                          <div class="content">
-                            <h2>2012</h2>
-                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                          </div>
-                        </div>
-                        
-                     
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio molestiae delectus corporis,
+                                sint accusamus, provident, sequi ipsum sunt ducimus dolore similique! Obcaecati
+                                similique vero facere accusantium cum veniam delectus, saepe veritatis, nulla aperiam
+                                voluptatibus dolorum esse, non id optio placeat eos. Aut, recusandae? Deserunt quo
+                                possimus, commodi pariatur esse laborum quia itaque inventore rem explicabo
+                                reprehenderit voluptatibus dicta error optio consequuntur nobis cum dignissimos! Id
+                                nisi, fuga provident placeat necessitatibus deleniti sapiente obcaecati vero quae enim
+                                maxime voluptate voluptas veritatis. Earum optio reprehenderit repellendus? Culpa
+                                suscipit asperiores exercitationem.</p></br>
+
+                        <a href="/images/resume.pdf" download class="resume_buttons">Download My Resume</a>
+                        <a href="/resume" class="resume_buttons">Contact Me</a>
                 </div>
-                
+                <div id="experience">
+
+                        <h2>Experience</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio molestiae delectus corporis,
+                                sint accusamus, provident, sequi ipsum sunt ducimus dolore similique! Obcaecati
+                                similique vero facere accusantium cum veniam delectus, saepe veritatis, nulla aperiam
+                                voluptatibus dolorum esse, non id optio placeat eos. Aut, recusandae? Deserunt quo
+                                possimus, commodi pariatur esse laborum quia itaque inventore rem explicabo
+                                reprehenderit voluptatibus dicta error optio consequuntur nobis cum dignissimos! Id
+                                nisi, fuga provident placeat necessitatibus deleniti sapiente obcaecati vero quae enim
+                                maxime voluptate voluptas veritatis. Earum optio reprehenderit repellendus? Culpa
+                                suscipit asperiores exercitationem.</p></br>
+
+                        <div class="timeline">
+                                <div class="container left">
+                                        <div class="content">
+                                                <h3 class="content_title">Access International 2018-2020</h3>
+                                                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                                                        admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                                                        quis iuvaret expetendis his, te elit voluptua dignissim per,
+                                                        habeo iusto primis ea eam.</p>
+                                        </div>
+                                </div>
+                                <div class="container right">
+                                        <div class="content">
+                                                <h3 class="content_title">Prime Choice Funding 2015-2018</h3>
+                                                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                                                        admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                                                        quis iuvaret expetendis his, te elit voluptua dignissim per,
+                                                        habeo iusto primis ea eam.</p>
+                                        </div>
+                                </div>
+                                <div class="container left">
+                                        <div class="content">
+                                                <h3 class="content_title">Rockview Dairy</h3>
+                                                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                                                        admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                                                        quis iuvaret expetendis his, te elit voluptua dignissim per,
+                                                        habeo iusto primis ea eam.</p>
+                                        </div>
+                                </div>
+                                <div class="container right">
+                                        <div class="content">
+                                                <h3 class="content_title">Bobeli Screen Printing</h3>
+                                                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                                                        admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                                                        quis iuvaret expetendis his, te elit voluptua dignissim per,
+                                                        habeo iusto primis ea eam.</p>
+                                        </div>
+                                </div>
+
+                                <div id="skills">
+                                        <h2>Skills</h2>
+                                        <div id="professional_skills">
+                                                <h3>Professional Skills</h3>
+
+                                        <p>HTML</p>
+                                        <div class="skills_container">
+                                                <div class="skills html">90%</div>
+                                        </div>
+
+                                        <p>CSS</p>
+                                        <div class="skills_container">
+                                                <div class="skills css">80%</div>
+                                        </div>
+
+                                        <p>JavaScript</p>
+                                        <div class="skills_container">
+                                                <div class="skills js">65%</div>
+                                        </div>
+
+                                        <p>PHP</p>
+                                        <div class="skills_container">
+                                                <div class="skills php">60%</div>
+                                        </div>
+                                        </div>
+                                        <div id="personal_skills">
+                                                <h3>Personal Skills</h3>
+                                                <p>HTML</p>
+                                                <div class="skills_container">
+                                                        <div class="skills html">90%</div>
+                                                </div>
+        
+                                                <p>CSS</p>
+                                                <div class="skills_container">
+                                                        <div class="skills css">80%</div>
+                                                </div>
+        
+                                                <p>JavaScript</p>
+                                                <div class="skills_container">
+                                                        <div class="skills js">65%</div>
+                                                </div>
+        
+                                                <p>PHP</p>
+                                                <div class="skills_container">
+                                                        <div class="skills php">60%</div>
+                                                </div>
+                                                </div>
 
 
+                                </div>
+
+
+                        </div>
+
+
+
+
+                </div>
         </div>
-        </div>
-        
-        
+
+
 </body>
+
 </html>

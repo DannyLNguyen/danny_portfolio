@@ -95,35 +95,87 @@ h1 {
 
 /*resume*/
 
-
-
 #header{
 
         margin: auto;
         width: 960px;
-        height: 135px;
-        
-        
-       
+        height: 250px;
         background:  #606060;
         text-align: center;
+        font-family: sans-serif;
+}
+#resume_title{
+        line-height: 0px;
+        margin-top: 50px;
+        
+}
+#header h2{
+        color: white;
+        margin-top: 10px;
+        display: inline-block;
+        text-align: center
+        
+}
+#header p{
+        color: white;
+        font-size: 16px;
+        display: inline-block;
+        top: 10px;
+        
+        
+}
+
+ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        background-color: #111;
+      }
+#menu_button{
+
+        float: left;
+        color: magenta;
+        text-decoration: none;
+        margin-left: 420px;
+        top: 20px;
+        
+        position: absolute;
+        
 }
 
 img {
         border-radius: 50%;
-        outline: darkgreen;
+        border: 5px solid white;
         height: 150px;
         width: 150px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
        
         vertical-align: bottom;
-        margin-top: 70px;
+        margin-top: 17px;
       }
 
 #intro{
         width: 960px;
         height: 300px;
         position: absolute;
-        top: 295px;
+        top: 410px;
         left: 50%;
         transform: translate(-50%, -50%);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -154,13 +206,14 @@ img {
 }
 #experience{
         min-width: 960px;
-        height: 960px;
+        height: 1140px;
         position: absolute;
-        top: 936px;
+        top: 1140px;
         left: 50%;
         transform: translate(-50%, -50%);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         text-align: center;
+        font-family: sans-serif;
 
 
 }
@@ -179,8 +232,8 @@ img {
         position: absolute;
         width: 4px;
         background-color:  #47add5;
-        top: 71px;
-        bottom: -70px;
+        top: 23px;
+        bottom: 0px;
         left: 481px;
         margin-left: -3px;
       }
@@ -191,7 +244,7 @@ img {
         position: relative;
         background-color: inherit;
         width: 41.6%;
-        top: 50px;
+        
       }
       
       /* The circles on the timeline */
@@ -216,7 +269,7 @@ img {
       
       /* Place the container to the right */
       .right {
-        top: 115px;
+        top: 47px;
         display: inline-block;
       }
       
@@ -228,10 +281,10 @@ img {
         top: 22px;
         width: 0;
         z-index: 1;
-        right: 30px;
+        right: 31px;
         border: medium solid #dcdcdc;
         border-width: 10px 0 10px 10px;
-        border-color: transparent transparent transparent #dcdcdc;
+        border-color: transparent transparent transparent #47484a;
       }
       
       /* Add arrows to the right container (pointing left) */
@@ -242,10 +295,10 @@ img {
         top: 22px;
         width: 0;
         z-index: 1;
-        left: 30px;
+        left: 31px;
         border: medium solid #dcdcdc;
         border-width: 10px 10px 10px 0;
-        border-color: transparent #dcdcdc transparent transparent ;
+        border-color: transparent #47484a transparent transparent ;
       }
       
       /* Fix the circle for containers on the right side */
@@ -262,7 +315,18 @@ img {
         border-radius: 6px;
         display: inline-block;
         top: 10px;
+        background: linear-gradient(to top, #dcdcdc 160px,#47484a 20px)
       }
+
+.content_title{
+        color: white;
+        margin-top: 0px;
+        display: inline-block;
+        font-family: sans-serif;
+        font-weight: lighter;
+        
+        
+}
       
       /* Media queries - Responsive timeline on screens less than 600px wide */
       @media screen and (max-width: 600px) {
@@ -298,10 +362,62 @@ img {
         }
       }
 
+/* skills  section */
+
       
+#skills{
+        min-width: 960px;
+        height: 500px;
+        position: absolute;
+        top: 790px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        text-align: center;
+
+}
+
+#professional_skills{
+        height: 330px;
+        width: 300px;
+        display: inline-block;
+        background-color: #606060;
+        border-radius: 6px;
+        margin-left: 43px;
+        float: left;
 
 
+}
 
+.skills_container {
+        width: 90%;
+        background-color: #ddd;
+        margin: 0 auto;
+      }
+
+.skills {
+        text-align: right;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        color: white;
+      }
+      
+.html {width: 90%; background-color: #47add5;}
+.css {width: 80%; background-color: #47add5;}
+.js {width: 65%; background-color: #47add5;}
+.php {width: 60%; background-color: #47add5;}
+
+#personal_skills{
+        height: 330px;
+        width: 300px;
+        display: inline-block;
+        background-color: #606060;
+        border-radius: 6px;
+        margin-left: 10px;
+        
+
+
+}
 
 
 
