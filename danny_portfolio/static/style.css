@@ -148,17 +148,7 @@ ul {
       li a:hover {
         background-color: #111;
       }
-#menu_button{
 
-        float: left;
-        color: magenta;
-        text-decoration: none;
-        margin-left: 420px;
-        top: 20px;
-        
-        position: absolute;
-        
-}
 
 img {
         border-radius: 50%;
@@ -173,7 +163,7 @@ img {
 
 #intro{
         width: 960px;
-        height: 300px;
+        height: 310px;
         position: absolute;
         top: 410px;
         left: 50%;
@@ -183,10 +173,25 @@ img {
        
 }
 
-#intro p{
 
-        margin-top: 100px;
+#social_tabs{
+        width: 200px;
+        
+        margin-top: 90px;
+        display: inline-block;
+        font-size: 25px;
+
+
+        }
+#social_tabs a{
+
+        text-decoration: none;
+        color:  #a2a7ad;
+        padding: 7px;
 }
+
+
+
 .resume_buttons{
         border: none;
         background-color: #47add5; 
@@ -195,7 +200,7 @@ img {
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        margin: 4px 2px;
+        margin: -15px 2px;
         transition-duration: 0.4s;
         cursor: pointer;
         border-radius: 10px;
@@ -206,7 +211,7 @@ img {
 }
 #experience{
         min-width: 960px;
-        height: 1140px;
+        height: 1160px;
         position: absolute;
         top: 1140px;
         left: 50%;
@@ -383,8 +388,7 @@ img {
         display: inline-block;
         background-color: #606060;
         border-radius: 6px;
-        margin-left: 43px;
-        float: left;
+      
 
 
 }
@@ -413,7 +417,7 @@ img {
         display: inline-block;
         background-color: #606060;
         border-radius: 6px;
-        margin-left: 10px;
+        
         
 
 

@@ -8,6 +8,9 @@
         {% load static %}
         <link rel="stylesheet" href="{% static 'style.css' %}">
         <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src='main.js'></script>
 </head>
@@ -17,8 +20,9 @@
         <div id="header">
                 <ul>
 
-                        <li><a href="/contact_me">Contact</a></li>
+
                         <li><a href="/projects">Projects</a></li>
+                        <li><a href="/about_me">About Me</a></li>
                 </ul>
 
                 <div id="resume_title">
@@ -33,7 +37,15 @@
         </div>
         <div id="resume_wrapper">
                 <div id="intro">
+                        <div id="social_tabs">
+                                <a href="https://www.facebook.com/danny.nguyen.626" class="fa fa-facebook"
+                                        target="_blank"></a>
+                                <a href="https://www.linkedin.com/in/dannynguyen626" class="fa fa-linkedin"
+                                        target="_blank"></a>
+                                <a href="#" class="fa fa-google"></a>
+                                <a href="https://github.com/DannyLNguyen" class="fa fa-github"></a>
 
+                        </div>
 
 
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio molestiae delectus corporis,
@@ -46,8 +58,9 @@
                                 maxime voluptate voluptas veritatis. Earum optio reprehenderit repellendus? Culpa
                                 suscipit asperiores exercitationem.</p></br>
 
-                        <a href="/images/resume.pdf" download class="resume_buttons">Download My Resume</a>
-                        <a href="/resume" class="resume_buttons">Contact Me</a>
+                        <a href="/images/resume.pdf" download class="resume_buttons">DL My Resume</a>
+                        <a href="/resume" class="resume_buttons" onClick="parent.location='mailto:dannynguyen626@yahoo.com?'">Email Me</a>
+                       
                 </div>
                 <div id="experience">
 
@@ -105,25 +118,25 @@
                                         <div id="professional_skills">
                                                 <h3>Professional Skills</h3>
 
-                                        <p>HTML</p>
-                                        <div class="skills_container">
-                                                <div class="skills html">90%</div>
-                                        </div>
+                                                <p>HTML</p>
+                                                <div class="skills_container">
+                                                        <div class="skills html">90%</div>
+                                                </div>
 
-                                        <p>CSS</p>
-                                        <div class="skills_container">
-                                                <div class="skills css">80%</div>
-                                        </div>
+                                                <p>CSS</p>
+                                                <div class="skills_container">
+                                                        <div class="skills css">80%</div>
+                                                </div>
 
-                                        <p>JavaScript</p>
-                                        <div class="skills_container">
-                                                <div class="skills js">65%</div>
-                                        </div>
+                                                <p>JavaScript</p>
+                                                <div class="skills_container">
+                                                        <div class="skills js">65%</div>
+                                                </div>
 
-                                        <p>PHP</p>
-                                        <div class="skills_container">
-                                                <div class="skills php">60%</div>
-                                        </div>
+                                                <p>PHP</p>
+                                                <div class="skills_container">
+                                                        <div class="skills php">60%</div>
+                                                </div>
                                         </div>
                                         <div id="personal_skills">
                                                 <h3>Personal Skills</h3>
@@ -131,22 +144,45 @@
                                                 <div class="skills_container">
                                                         <div class="skills html">90%</div>
                                                 </div>
-        
+
                                                 <p>CSS</p>
                                                 <div class="skills_container">
                                                         <div class="skills css">80%</div>
                                                 </div>
-        
+
                                                 <p>JavaScript</p>
                                                 <div class="skills_container">
                                                         <div class="skills js">65%</div>
                                                 </div>
-        
+
                                                 <p>PHP</p>
                                                 <div class="skills_container">
                                                         <div class="skills php">60%</div>
                                                 </div>
+                                        </div>
+
+                                        <div id="personal_skills">
+                                                <h3>Personal Skills</h3>
+                                                <p>HTML</p>
+                                                <div class="skills_container">
+                                                        <div class="skills html">90%</div>
                                                 </div>
+
+                                                <p>CSS</p>
+                                                <div class="skills_container">
+                                                        <div class="skills css">80%</div>
+                                                </div>
+
+                                                <p>JavaScript</p>
+                                                <div class="skills_container">
+                                                        <div class="skills js">65%</div>
+                                                </div>
+
+                                                <p>PHP</p>
+                                                <div class="skills_container">
+                                                        <div class="skills php">60%</div>
+                                                </div>
+                                        </div>
 
 
                                 </div>
