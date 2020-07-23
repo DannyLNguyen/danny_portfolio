@@ -1,6 +1,7 @@
 body, html {
         height: 100%;
         margin: 0;
+        
       }
 #backround {
         position: static;
@@ -104,6 +105,12 @@ h1 {
         text-align: center;
         font-family: sans-serif;
 }
+
+
+
+
+
+
 #resume_title{
         line-height: 0px;
         margin-top: 50px;
@@ -170,7 +177,11 @@ img {
         transform: translate(-50%, -50%);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         text-align: center;
+        
        
+}
+#intro p{
+        padding: 10px;
 }
 
 
@@ -213,7 +224,7 @@ img {
         min-width: 960px;
         height: 1160px;
         position: absolute;
-        top: 1140px;
+        top: 1155px;
         left: 50%;
         transform: translate(-50%, -50%);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -370,11 +381,11 @@ img {
 /* skills  section */
 
       
-#skills{
+#skills_section{
         min-width: 960px;
         height: 500px;
         position: absolute;
-        top: 790px;
+        top: 760px;
         left: 50%;
         transform: translate(-50%, -50%);
         
@@ -382,21 +393,23 @@ img {
 
 }
 
-#professional_skills{
+#skills_box{
         height: 330px;
         width: 300px;
         display: inline-block;
         background-color: #606060;
         border-radius: 6px;
-      
-
-
+        vertical-align: top;
+}
+#skills_box p{
+        font-size: 12px;
 }
 
 .skills_container {
         width: 90%;
         background-color: #ddd;
         margin: 0 auto;
+        font-size: 12px;
       }
 
 .skills {
@@ -408,6 +421,10 @@ img {
       
 .html {width: 90%; background-color: #47add5;}
 .css {width: 80%; background-color: #47add5;}
+.js {width: 65%; background-color: #47add5;}
+.php {width: 60%; background-color: #47add5;}
+.django {width: 80%; background-color: #47add5;}
+.python {width: 80%; background-color: #47add5;}
 .js {width: 65%; background-color: #47add5;}
 .php {width: 60%; background-color: #47add5;}
 

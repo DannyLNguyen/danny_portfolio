@@ -8,18 +8,43 @@
         {% load static %}
         <link rel="stylesheet" href="{% static 'style.css' %}">
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+       
         <script src='main.js'></script>
 </head>
 
 <body>
+        <script type="text/javascript">
+                jQuery(function($){
+                    $( '.menu-btn' ).click(function(){
+                            $('.responsive-menu').addClass('expand')
+                            $('.menu-btn').addClass('btn-none')
+                    })
+                    
+                     $( '.close-btn' ).click(function(){
+                            $('.responsive-menu').removeClass('expand')
+                            $('.menu-btn').removeClass('btn-none')
+                    })
+                  })
+         </script>
+         <script type="text/javascript">
+                jQuery(function($){
+                         $( '.menu-btn' ).click(function(){
+                         $('.responsive-menu').toggleClass('expand')
+                         })
+                })
+        </script>
+
+
+
+
+
 
         <div id="header">
-                <ul>
+                
 
+                <ul>
 
                         <li><a href="/projects">Projects</a></li>
                         <li><a href="/about_me">About Me</a></li>
@@ -38,29 +63,20 @@
         <div id="resume_wrapper">
                 <div id="intro">
                         <div id="social_tabs">
-                                <a href="https://www.facebook.com/danny.nguyen.626" class="fa fa-facebook"
-                                        target="_blank"></a>
-                                <a href="https://www.linkedin.com/in/dannynguyen626" class="fa fa-linkedin"
-                                        target="_blank"></a>
+                                <a href="https://www.facebook.com/danny.nguyen.626" class="fa fa-facebook" target="_blank"></a>
+                                <a href="https://www.linkedin.com/in/dannynguyen626" class="fa fa-linkedin" target="_blank"></a>
                                 <a href="#" class="fa fa-google"></a>
-                                <a href="https://github.com/DannyLNguyen" class="fa fa-github"></a>
+                                <a href="https://github.com/DannyLNguyen" class="fa fa-github" target="_blank"></a>
 
                         </div>
 
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio molestiae delectus corporis,
-                                sint accusamus, provident, sequi ipsum sunt ducimus dolore similique! Obcaecati
-                                similique vero facere accusantium cum veniam delectus, saepe veritatis, nulla aperiam
-                                voluptatibus dolorum esse, non id optio placeat eos. Aut, recusandae? Deserunt quo
-                                possimus, commodi pariatur esse laborum quia itaque inventore rem explicabo
-                                reprehenderit voluptatibus dicta error optio consequuntur nobis cum dignissimos! Id
-                                nisi, fuga provident placeat necessitatibus deleniti sapiente obcaecati vero quae enim
-                                maxime voluptate voluptas veritatis. Earum optio reprehenderit repellendus? Culpa
-                                suscipit asperiores exercitationem.</p></br>
+                        <p>  Dedicated Junior Web Developer able to build .Net web applications from the ground up - information gathering, planning, design, development, testing and delivery and maintenance. Extremely passionate towards the learning of software architecture and design combined with sensitivity to serve the needs of the business balanced with the delivery of high quality solutions.</p></br>
 
                         <a href="/images/resume.pdf" download class="resume_buttons">DL My Resume</a>
-                        <a href="/resume" class="resume_buttons" onClick="parent.location='mailto:dannynguyen626@yahoo.com?'">Email Me</a>
-                       
+                        <a href="/resume" class="resume_buttons"
+                                onClick="parent.location='mailto:dannynguyen626@yahoo.com?'">Email Me</a>
+
                 </div>
                 <div id="experience">
 
@@ -78,16 +94,15 @@
                         <div class="timeline">
                                 <div class="container left">
                                         <div class="content">
-                                                <h3 class="content_title">Access International 2018-2020</h3>
+                                                <h3 class="content_title">Access International, 2018-2020</h3>
                                                 <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
                                                         admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
-                                                        quis iuvaret expetendis his, te elit voluptua dignissim per,
-                                                        habeo iusto primis ea eam.</p>
+                                                        quis iuvaret expetendis his, te elit voluptua digni</p>
                                         </div>
                                 </div>
                                 <div class="container right">
                                         <div class="content">
-                                                <h3 class="content_title">Prime Choice Funding 2015-2018</h3>
+                                                <h3 class="content_title">Prime Choice Funding, 2015-2018</h3>
                                                 <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
                                                         admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
                                                         quis iuvaret expetendis his, te elit voluptua dignissim per,
@@ -96,7 +111,7 @@
                                 </div>
                                 <div class="container left">
                                         <div class="content">
-                                                <h3 class="content_title">Rockview Dairy</h3>
+                                                <h3 class="content_title">Rockview Dairy, 2007-2015</h3>
                                                 <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
                                                         admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
                                                         quis iuvaret expetendis his, te elit voluptua dignissim per,
@@ -113,10 +128,10 @@
                                         </div>
                                 </div>
 
-                                <div id="skills">
+                                <div id="skills_section">
                                         <h2>Skills</h2>
-                                        <div id="professional_skills">
-                                                <h3>Professional Skills</h3>
+                                        <div id="skills_box">
+                                                <h3>Frontend</h3>
 
                                                 <p>HTML</p>
                                                 <div class="skills_container">
@@ -131,6 +146,29 @@
                                                 <p>JavaScript</p>
                                                 <div class="skills_container">
                                                         <div class="skills js">65%</div>
+                                                </div>
+
+                                                <p>JQuery</p>
+                                                <div class="skills_container">
+                                                        <div class="skills php">60%</div>
+
+                                                </div>
+                                        </div>
+                                        <div id="skills_box">
+                                                <h3>Backend</h3>
+                                                <p>Django</p>
+                                                <div class="skills_container">
+                                                        <div class="skills django">80%</div>
+                                                </div>
+
+                                                <p>Python</p>
+                                                <div class="skills_container">
+                                                        <div class="skills python">80%</div>
+                                                </div>
+
+                                                <p>Java</p>
+                                                <div class="skills_container">
+                                                        <div class="skills java">65%</div>
                                                 </div>
 
                                                 <p>PHP</p>
@@ -138,49 +176,31 @@
                                                         <div class="skills php">60%</div>
                                                 </div>
                                         </div>
-                                        <div id="personal_skills">
+
+                                        <div id="skills_box">
                                                 <h3>Personal Skills</h3>
-                                                <p>HTML</p>
+                                                <p>Leadership</p>
                                                 <div class="skills_container">
                                                         <div class="skills html">90%</div>
                                                 </div>
 
-                                                <p>CSS</p>
+                                                <p>Punctual</p>
                                                 <div class="skills_container">
-                                                        <div class="skills css">80%</div>
+                                                        <div class="skills css">90%</div>
                                                 </div>
 
-                                                <p>JavaScript</p>
+                                                <p>Analytical</p>
                                                 <div class="skills_container">
-                                                        <div class="skills js">65%</div>
+                                                        <div class="skills js">80%</div>
                                                 </div>
 
-                                                <p>PHP</p>
+                                                <p>Communicative</p>
                                                 <div class="skills_container">
-                                                        <div class="skills php">60%</div>
+                                                        <div class="skills php">90%</div>
                                                 </div>
-                                        </div>
-
-                                        <div id="personal_skills">
-                                                <h3>Personal Skills</h3>
-                                                <p>HTML</p>
+                                                <p>Committed</p>
                                                 <div class="skills_container">
-                                                        <div class="skills html">90%</div>
-                                                </div>
-
-                                                <p>CSS</p>
-                                                <div class="skills_container">
-                                                        <div class="skills css">80%</div>
-                                                </div>
-
-                                                <p>JavaScript</p>
-                                                <div class="skills_container">
-                                                        <div class="skills js">65%</div>
-                                                </div>
-
-                                                <p>PHP</p>
-                                                <div class="skills_container">
-                                                        <div class="skills php">60%</div>
+                                                        <div class="skills php">90%</div>
                                                 </div>
                                         </div>
 
