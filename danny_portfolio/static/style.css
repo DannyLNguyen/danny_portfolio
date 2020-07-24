@@ -333,6 +333,21 @@ img {
         top: 10px;
         background: linear-gradient(to top, #dcdcdc 160px,#47484a 20px)
       }
+.content p{
+        font-size: 12px;
+}
+.content_right p{
+        font-size: 12px;
+}
+.content_right{
+        padding: 20px 30px;
+        background-color: #dcdcdc;
+        position: relative;
+        border-radius: 6px;
+        display: inline-block;
+        top: 10px;
+        background: linear-gradient(to top, #dcdcdc 173px,#47484a 20px)
+      }
 
 .content_title{
         color: white;
