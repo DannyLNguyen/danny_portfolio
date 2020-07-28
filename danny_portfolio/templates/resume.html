@@ -15,39 +15,19 @@
 </head>
 
 <body>
-        <script type="text/javascript">
-                jQuery(function($){
-                    $( '.menu-btn' ).click(function(){
-                            $('.responsive-menu').addClass('expand')
-                            $('.menu-btn').addClass('btn-none')
-                    })
-                    
-                     $( '.close-btn' ).click(function(){
-                            $('.responsive-menu').removeClass('expand')
-                            $('.menu-btn').removeClass('btn-none')
-                    })
-                  })
-         </script>
-         <script type="text/javascript">
-                jQuery(function($){
-                         $( '.menu-btn' ).click(function(){
-                         $('.responsive-menu').toggleClass('expand')
-                         })
-                })
-        </script>
-
-
-
-
-
-
+        <script>
+                function goBack() {
+                  window.history.back();
+                }
+                </script>
         <div id="header">
                 
 
                 <ul>
-
+                        
                         <li><a href="/projects">Projects</a></li>
                         <li><a href="/about_me">About Me</a></li>
+                        <li><button class="go_back" onclick="goBack()">BACK</button></li>
                 </ul>
 
                 <div id="resume_title">
@@ -67,11 +47,12 @@
                                 <a href="https://www.linkedin.com/in/dannynguyen626" class="fa fa-linkedin" target="_blank"></a>
                                 <a href="#" class="fa fa-google"></a>
                                 <a href="https://github.com/DannyLNguyen" class="fa fa-github" target="_blank"></a>
+                                <a href="https://github.com/DannyLNguyen" class="fa fa-wechat" target="_blank"></a>
 
                         </div>
 
 
-                        <p>  Dedicated Junior Web Developer able to build .Net web applications from the ground up - information gathering, planning, design, development, testing and delivery and maintenance. Extremely passionate towards the learning of software architecture and design combined with sensitivity to serve the needs of the business balanced with the delivery of high quality solutions.</p></br>
+                        <p>  Dedicated Junior full stack Web Developer able to build applications from the ground up - information gathering, planning, design, development, testing and delivery and maintenance. Extremely passionate towards the learning of new langueges and technologies with sensitivity to serve the needs of the business balanced with the delivery of high quality solutions. Looking to bridge my extensive sales and customer service backround with my exciting new career path.</p></br>
 
                         <a href="/images/resume.pdf" download class="resume_buttons">DL My Resume</a>
                         <a href="/resume" class="resume_buttons"

@@ -60,7 +60,7 @@ h1 {
         position: absolute;
         width: 630px;
         top:60%;
-        left: 50%;
+        left: 60%;
         transform: translate(-50%, -50%);
         margin: auto;
  
@@ -103,6 +103,14 @@ h1 {
         height: 250px;
         background:  #606060;
         text-align: center;
+        font-family: sans-serif;
+}
+.go_back {
+        color: white;
+        background-color: #333;
+        width: 100px;
+        height: 45px;
+        margin-left: 650px;
         font-family: sans-serif;
 }
 
@@ -181,12 +189,12 @@ img {
        
 }
 #intro p{
-        padding: 10px;
+        padding: 5px;
 }
 
 
 #social_tabs{
-        width: 200px;
+        width: 204px;
         
         margin-top: 90px;
         display: inline-block;
