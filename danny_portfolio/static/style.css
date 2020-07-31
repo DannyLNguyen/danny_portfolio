@@ -60,7 +60,7 @@ h1 {
         position: absolute;
         width: 630px;
         top:60%;
-        left: 60%;
+        left: 62%;
         transform: translate(-50%, -50%);
         margin: auto;
  
@@ -86,7 +86,8 @@ h1 {
 .contact_button {
         background-color: white; 
         color: black; 
-        border: 4px solid  black;
+        
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
       
 .contact_button:hover {
@@ -165,7 +166,7 @@ ul {
       }
 
 
-img {
+#resume_img {
         border-radius: 50%;
         border: 5px solid white;
         height: 150px;
@@ -190,6 +191,8 @@ img {
 }
 #intro p{
         padding: 5px;
+        font-family: sans-serif;
+        font-size: 15px;
 }
 
 
@@ -239,7 +242,10 @@ img {
         text-align: center;
         font-family: sans-serif;
 
-
+}
+#experience_intro{
+        font-size: 15px;
+        padding: 10px;
 }
 
 .timeline {
@@ -450,6 +456,11 @@ img {
 .python {width: 80%; background-color: #47add5;}
 .js {width: 65%; background-color: #47add5;}
 .php {width: 60%; background-color: #47add5;}
+.leadership {width: 90%; background-color: #47add5;}
+.punctual {width: 90%; background-color: #47add5;}
+.analytical {width: 80%; background-color: #47add5;}
+.communicative {width: 90%; background-color: #47add5;}
+.committed {width: 98%; background-color: #47add5;}
 
 #personal_skills{
         height: 330px;
@@ -458,11 +469,34 @@ img {
         background-color: #606060;
         border-radius: 6px;
         
-        
+}
+
+/* projects  section */
+
+.projects_img{
+        width: 400px;
+        height: 300px;
+        padding: 5px;
+        margin: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+#project_img_container{
+
+        display: inline-block;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
 
 }
 
 
-
+     
+      
+      
+      
 
