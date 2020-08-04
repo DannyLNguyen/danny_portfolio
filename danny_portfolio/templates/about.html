@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -9,8 +10,49 @@
         <script src='main.js'></script>
         {% load static %}
         <link rel="stylesheet" href="{% static 'style.css' %}">
+        <style>
+                .background {
+
+                        background-image: url("{% static 'images/on_the_ledge.jpg' %}");
+                        width: 960px;
+                        height: 32%;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        display: inline-block;
+                        margin: 0;
+                        position: absolute;
+                        top: 15%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                }
+        </style>
 </head>
+
 <body>
-        <h1>about me</h1>
+        <div class="background">
+                <div id="about_title">
+                        <h1>Danny Nguyen</h1>
+                </div>
+
+        </div>
+        <div class="outline">
+
+                <div id="about_text">
+
+                        <h3>About me</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod incidunt ut aut voluptate fuga
+                                vel odit, obcaecati laborum quos voluptatum dicta accusamus adipisci sunt repellat?
+                                Nihil, ducimus tempora rerum blanditiis ipsa praesentium aperiam nobis at saepe odio
+                                eligendi sequi fuga repellat quam porro adipisci ut culpa beatae voluptatum
+                                necessitatibus repellendus. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Ut, corporis deserunt a libero distinctio saepe ab, esse perferendis sint suscipit dicta
+                                voluptatibus culpa eligendi voluptates fuga quis! Fuga sed repellendus autem odio vitae
+                                dolorum quaerat magnam, fugit impedit aspernatur nisi, neque dicta deleniti aliquam
+                                tenetur maxime natus quo eveniet nobis.</p>
+
+                </div>
+        </div>
 </body>
+
 </html>

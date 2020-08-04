@@ -455,6 +455,7 @@ ul {
 .django {width: 80%; background-color: #47add5;}
 .python {width: 80%; background-color: #47add5;}
 .js {width: 65%; background-color: #47add5;}
+.java {width: 65%; background-color: #47add5;}
 .php {width: 60%; background-color: #47add5;}
 .leadership {width: 90%; background-color: #47add5;}
 .punctual {width: 90%; background-color: #47add5;}
@@ -493,6 +494,61 @@ ul {
 
 
 }
+
+/*about page */
+
+
+
+#about_title{
+        width: 50%;
+        height: 50%;
+        text-align: left;
+        right: 50px;
+        top: 200px;
+        position: absolute;
+       
+}
+#about_title h1{
+        
+        font-size: 4vw;
+        font-family: fantasy;
+        font-weight: lighter;
+        text-align: left;
+        margin: 0px;
+
+        opacity: 100%;
+}
+
+#about_text{
+
+        width: 960px;
+        height: auto;
+        text-align: center;
+        display: inline-block;
+        margin: 0;
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      
+        shape-outside: circle(50%);
+      
+        
+}
+.outline { 
+        shape-outside: circle(50%); 
+        width: 960px;
+        height: auto;
+      
+        float: left; 
+        margin: 0;
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      } 
+
 
 
      
