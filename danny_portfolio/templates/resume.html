@@ -1,183 +1,251 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>My Resume</title>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+                integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                crossorigin="anonymous">
+
         {% load static %}
         <link rel="stylesheet" href="{% static 'style.css' %}">
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel="stylesheet"
-                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       
-        <script src='main.js'></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
-        <script>
-                function goBack() {
-                  window.history.back();
-                }
-                </script>
-        <div id="header">
-                
+        <div class="container-fluid n1">
 
-                <ul>
-                        
-                        <li><a href="/projects">Projects</a></li>
-                        <li><a href="/about_me">About Me</a></li>
-                        <li><button class="go_back" onclick="goBack()">BACK</button></li>
-                </ul>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-                <div id="resume_title">
-                        <h2>Danny Nguyen</h2></br>
-                        <p>Full stack web developer</p>
-                </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                        <li class="nav-item active">
+                                                <a class="nav-link" href="/">Home <span
+                                                                class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="/about_me">About Me</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="#">Projects</a>
+                                        </li>
 
-                <img id="resume_img" src="{% static 'images/IMG_5670.jpeg' %}"
-                        alt="Avatar">
+                                </ul>
+                        </div>
 
-
+                </nav>
         </div>
-        <div id="resume_wrapper">
-                <div id="intro">
-                        <div id="social_tabs">
-                                <a href="https://www.facebook.com/danny.nguyen.626" class="fa fa-facebook" target="_blank"></a>
-                                <a href="https://www.linkedin.com/in/dannynguyen626" class="fa fa-linkedin" target="_blank"></a>
-                                <a href="https://github.com/DannyLNguyen" class="fa fa-github" target="_blank"></a>
-                                
-                                
+        <div class="conatiner">
+                <!-- News jumbotron -->
+                <div class="jumbotron text-center hoverable p-4">
+
+                        <!-- Grid row -->
+                        <div class="row">
+
+                                <!-- Grid column -->
+                                <div class="col-md-4 offset-md-1 mx-3 my-3">
+
+                                        <!-- Featured image -->
+                                        <div class="view overlay">
+                                                <img src="{% static 'images/on_the_ledge.jpg' %}" class="img-fluid"
+                                                        alt="Sample image for first version of blog listing">
+                                                <a>
+                                                        <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                        </div>
+
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-7 text-md-left ml-3 mt-3">
+
+                                        <!-- Excerpt -->
+
+
+                                        <h1 class="h2 mb-4">Danny Nguyen</h1>
+
+                                        <p class="font-weight-normal">Dedicated Full stack Web Developer able to build
+                                                applications from the ground up - information gathering, planning,
+                                                design, development, testing and delivery and maintenance. Extremely
+                                                passionate towards the learning of new languages and technologies with
+                                                sensitivity to serve the needs of the business balanced with the
+                                                delivery of high quality solutions. Looking to bridge my extensive sales
+                                                and customer service background with my exciting new career path.</p>
+
+
+                                        <div class="text-center">
+                                                <a class="btn btn-primary btn-lg" href="/about" role="button">Go To
+                                                        Bio</a>
+                                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+
+                                        </div>
+
+                                </div>
+                                <!-- Grid column -->
 
                         </div>
-
-
-                        <p>  Dedicated Full stack Web Developer able to build applications from the ground up - information gathering, planning, design, development, testing and delivery and maintenance. Extremely passionate towards the learning of new languages  and technologies with sensitivity to serve the needs of the business balanced with the delivery of high quality solutions. Looking to bridge my extensive sales and customer service background with my exciting new career path.</p></br>
-
-                        <a href="{% static 'images/Danny_Resume.pdf' %}" download class="resume_buttons">DL My Resume</a>
-                        <a href="/resume" class="resume_buttons"
-                                onClick="parent.location='mailto:dannylenguyen626@gmail.com?'">Email Me</a>
-
-                </div>
-                <div id="experience">
-
-                        <h2>Experience</h2>
-                        <p id="experience_intro">Being in the marketing/sales industry for over 18 years I have finally decided it was time to freshen things up. After discovering my passion for web development, I couldn’t get enough. In order to shorten the learning curve I decided to take the leap and study with Coding Dojo(a full stack web dev bootcamp) I worked on project websites for friends and family, and hired myself to create an eCommerce site for my side business. I’m looking forward to bringing that passion and bridging my experience with my exciting new career path to a full-time role.  </p></br>
-
-                        <div class="timeline">
-                                <div class="container left">
-                                        <div class="content">
-                                                <h3 class="content_title">Access International, 2018-2020</h3>
-                                                <p>As head of recruitment I was in charge of networking and managing J1 agencies not only in the U.S. but around the globe. Utlilizing resoures such as social media platforms as well as holding mixers and conferences to present new and current programs. In the midst of recruitment, daily house cleaning duites were trouble shooting and managing issues for the current or potential students and employees. 
-                                                     </p>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content_right">
-                                                <h3 class="content_title">Prime Choice Funding, 2015-2018</h3>
-                                                <p> The role of a Sr.Loan Officer is very involved in the day to day loan process. After initially the relationship, being a call or email away helped answering any questions or addressing any concerns along the way. Email is the primary source of communication other than the phone itself, naturally I grew quite comfortable around computers and the tech involved. Having to learn and opporate new programs was a routine and key in my success.  </p>
-                                        </div>
-                                </div>
-                                <div class="container left">
-                                        <div class="content">
-                                                <h3 class="content_title">Rockview Dairy, 2007-2015</h3>
-                                                <p>  During my time here I was able to increase sales and most importantly maintain the volume. Among all of the other duties required, I also installed and serviced both the lottery machine and the POS system. Every holiday season, I would organize a toy drive which became an annual tradition. The last year of the drive we were able to create partnerships with manufacturers and ended up with over 50,000 toys donated!  </p>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content_right">
-                                                <h3 class="content_title">Bobeli Screen Printing 2010-2016</h3>
-                                                <p>Creating a business from ground up is never an easy task. It was a challenge not only did I take head on but it was also an environment I thrived in. Being a fully functional screenprinting shop required knowledge of programs such as Adobe Illustrator and Photoshop in order to design or render client artwork in order to print. Taking short classes provided by Ryonet and local supply stores helped me navigate my otherwise self taught journey.</p>
-                                        </div>
-                                </div>
-
-                                <div id="skills_section">
-                                        <h2>Skills</h2>
-                                        <div id="skills_box">
-                                                <h3>Frontend</h3>
-
-                                                <p>HTML</p>
-                                                <div class="skills_container">
-                                                        <div class="skills html">90%</div>
-                                                </div>
-
-                                                <p>CSS</p>
-                                                <div class="skills_container">
-                                                        <div class="skills css">80%</div>
-                                                </div>
-
-                                                <p>JavaScript</p>
-                                                <div class="skills_container">
-                                                        <div class="skills js">65%</div>
-                                                </div>
-
-                                                <p>JQuery</p>
-                                                <div class="skills_container">
-                                                        <div class="skills php">60%</div>
-
-                                                </div>
-                                        </div>
-                                        <div id="skills_box">
-                                                <h3>Backend</h3>
-                                                <p>Django</p>
-                                                <div class="skills_container">
-                                                        <div class="skills django">80%</div>
-                                                </div>
-
-                                                <p>Python</p>
-                                                <div class="skills_container">
-                                                        <div class="skills python">80%</div>
-                                                </div>
-
-                                                <p>Java</p>
-                                                <div class="skills_container">
-                                                        <div class="skills java">65%</div>
-                                                </div>
-
-                                                <p>PHP</p>
-                                                <div class="skills_container">
-                                                        <div class="skills php">60%</div>
-                                                </div>
-                                        </div>
-
-                                        <div id="skills_box">
-                                                <h3>Personal Skills</h3>
-                                                <p>Leadership</p>
-                                                <div class="skills_container">
-                                                        <div class="skills leadership">90%</div>
-                                                </div>
-
-                                                <p>Punctual</p>
-                                                <div class="skills_container">
-                                                        <div class="skills punctual">90%</div>
-                                                </div>
-
-                                                <p>Analytical</p>
-                                                <div class="skills_container">
-                                                        <div class="skills analytical">80%</div>
-                                                </div>
-
-                                                <p>Communicative</p>
-                                                <div class="skills_container">
-                                                        <div class="skills communicative">90%</div>
-                                                </div>
-                                                <p>Committed</p>
-                                                <div class="skills_container">
-                                                        <div class="skills committed">98%</div>
-                                                </div>
-                                        </div>
-
-
-                                </div>
-
-
-                        </div>
-
-
-
+                        <!-- Grid row -->
 
                 </div>
         </div>
+        <div class="container  text-center">
+                <h3 class="margin">What Am I?</h3>
+                <p> Being in the marketing/sales industry for over 18 years I have finally decided it was time to
+                        freshen things up. After discovering my passion for web development, I couldn’t get enough. In
+                        order to shorten the learning curve I decided to take the leap and study with Coding Dojo(a full
+                        stack web dev bootcamp) I worked on project websites for friends and family, and hired myself to
+                        create an eCommerce site for my side business. I’m looking forward to bringing that passion and
+                        bridging my experience with my exciting new career path to a full-time role. </p></br>
+
+        </div>
+
+
+        <div class="container">
+                <div class="page-header">
+                        <h1 id="timeline">Work History</h1>
+                </div>
+                <ul class="timeline">
+                        <li>
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-globe"></i></div>
+                                <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                                <h4 class="timeline-title">Access Interational USA, 2018-2020</h4>
+
+                                        </div>
+                                        <div class="timeline-body">
+                                                <p>As head of recruitment I was in charge of networking and managing J1
+                                                        agencies not only in the U.S. but around the globe. Utlilizing
+                                                        resoures such as social media platforms as well as holding
+                                                        mixers and conferences to present new and current programs. In
+                                                        the midst of recruitment, daily house cleaning duites were
+                                                        trouble shooting and managing issues for the current or
+                                                        potential students and employees.</p>
+                                        </div>
+                                </div>
+                        </li>
+                        <li class="timeline-inverted">
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-piggy-bank"></i></div>
+                                <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                                <h4 class="timeline-title">Prime Choice Funding, 2015-2018</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                                <p>The role of a Sr.Loan Officer is very involved in the day to day loan
+                                                        process. After initially the relationship, being a call or email
+                                                        away helped answering any questions or addressing any concerns
+                                                        along the way. Email is the primary source of communication
+                                                        other than the phone itself, naturally I grew quite comfortable
+                                                        around computers and the tech involved. Having to learn and
+                                                        opporate new programs was a routine and key in my success.</p>
+
+                                        </div>
+                                </div>
+                        </li>
+                        <li>
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-shopping-cart"></i></div>
+                                <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                                <h4 class="timeline-title">Rockview Dairy, 2007-2015</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                                <p>During my time here I was able to increase sales and most importantly
+                                                        maintain the volume. Among all of the other duties required, I
+                                                        also installed and serviced both the lottery machine and the POS
+                                                        system. Every holiday season, I would organize a toy drive which
+                                                        became an annual tradition. The last year of the drive we were
+                                                        able to create partnerships with manufacturers and ended up with
+                                                        over 50,000 toys donated! </p>
+                                        </div>
+                                </div>
+                        </li>
+                        <li class="timeline-inverted">
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-screenshot"></i></div>
+                                <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                                <h4 class="timeline-title">Bobeli Screen Printing 2010-2016</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                                <p>Creating a business from ground up is never an easy task. It was a
+                                                        challenge not only did I take head on but it was also an
+                                                        environment I thrived in. Being a fully functional
+                                                        screenprinting shop required knowledge of programs such as Adobe
+                                                        Illustrator and Photoshop in order to design or render client
+                                                        artwork in order to print. Taking short classes provided by
+                                                        Ryonet and local supply stores helped me navigate my otherwise
+                                                        self taught journey.</p>
+                                        </div>
+                                </div>
+                        </li>
+
+
+        </div>
+        <div class="container text-center">
+                <h3 class="margin">Education and Skills</h3>
+                <p> Being in the marketing/sales industry for over 18 years I have finally decided it
+                        was time to
+                        freshen things up. After discovering my passion for web development, I couldn’t
+                        get enough. In
+                        order to shorten the learning curve I decided to take the leap and study with
+                        Coding Dojo(a full
+                        stack web dev bootcamp) I worked on project websites for friends and family, and
+                        hired myself to
+                        create an eCommerce site for my side business. I’m looking forward to bringing
+                        that passion and
+                        bridging my experience with my exciting new career path to a full-time role.
+                </p></br>
+
+        </div>
+        
+        <div class="skills_wrapper">
+                <div class="skillbar" data-percent="55%">
+                        <div class="skillbar-title">HTML & CSS</div>
+                        <div class="skill-bar-percent">85%</div>
+                        <div class="skillbar-bar" style="width: 85%"></div>
+                </div>
+                <div class="skillbar" data-percent="80%">
+                        <div class="skillbar-title">JavaScript</div>
+                        <div class="skill-bar-percent">70%</div>
+                        <div class="skillbar-bar" style="width: 70%"></div>
+                </div>
+                <div class="skillbar" data-percent="40%">
+                        <div class="skillbar-title">Photography</div>
+                        <div class="skill-bar-percent">40%</div>
+                        <div class="skillbar-bar" style="width: 40%"></div>
+                </div>
+                <div class="skillbar" data-percent="70%">
+                        <div class="skillbar-title">branding</div>
+                        <div class="skill-bar-percent">70%</div>
+                        <div class="skillbar-bar" style="width: 70%"></div>
+                </div>
+                <div class="btn-group dropup">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                                <li><a href="/about_me">Go to Bio</a></li>
+        
+                        </ul>
+        
+                </div>
+        </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+
+        
+
+
+        
 
 
 </body>
