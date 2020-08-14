@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>Bootstrap Example</title>
+        <title>Danny Nguyen - Showcasing some old and new languages I've learned over the last couple months!</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -15,12 +15,13 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-        <div class="container-fluid n1">
+        <div class="container-fluid ">
 
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
@@ -47,18 +48,18 @@
                 </nav>
         </div>
 
-        
+
         <div class="conatiner">
-                <!-- News jumbotron -->
+
                 <div class="jumbotron text-center hoverable p-4">
 
-                        <!-- Grid row -->
+
                         <div class="row">
 
-                                <!-- Grid column -->
+
                                 <div class="col-md-4 offset-md-1 mx-3 my-3">
 
-                                        <!-- Featured image -->
+
                                         <div class="view overlay">
                                                 <img src="{% static 'images/on_the_ledge.jpg' %}" class="img-fluid"
                                                         alt="Sample image for first version of blog listing">
@@ -68,12 +69,10 @@
                                         </div>
 
                                 </div>
-                                <!-- Grid column -->
 
-                                <!-- Grid column -->
                                 <div class="col-md-7 text-md-left ml-3 mt-3">
 
-                                        <!-- Excerpt -->
+
 
 
                                         <h1 class="h2 mb-4">Danny Nguyen</h1>
@@ -88,29 +87,39 @@
 
 
                                         <div class="text-center">
-                                                <a class="btn btn-primary btn-lg" href="/about" role="button">Go To
-                                                        Bio</a>
-                                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                                            
+                                                <a class="btn btn-primary btn-lg"
+                                                        onClick="parent.location='mailto:dannylenguyen626@gmail.com?'"
+                                                        role="button">Email Me</a>
+                                                <a class="btn btn-primary btn-lg" role="button" href="{% static 'images/Danny_Resume.pdf' %}"
+                                                        download="Danny Nguyen's resume">Download my Resume</a>
+
+
+
 
                                         </div>
 
                                 </div>
-                                <!-- Grid column -->
+
 
                         </div>
-                        <!-- Grid row -->
+
 
                 </div>
         </div>
         <div class="icon-bar">
-                <a href="https://www.facebook.com/danny.nguyen.626" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a> 
-                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
-                <a href="#" class="google"><i class="fa fa-google"></i></a> 
-                <a href="https://www.linkedin.com/in/dannynguyen626" class="linkedin" target="_blank"><i class="fa fa-linkedin" ></i></a>
-                <a href="https://github.com/DannyLNguyen" class="github" target="_blank"><i class="fa fa-github" ></i></a> 
-              </div>
+                <a href="https://www.facebook.com/danny.nguyen.626" class="facebook" target="_blank"><i
+                                class="fa fa-facebook"></i></a>
+                <a href="#" class="google"><i class="fa fa-google"></i></a>
+                <a href="https://www.linkedin.com/in/dannynguyen626" class="linkedin" target="_blank"><i
+                                class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/DannyLNguyen" class="github" target="_blank"><i
+                                class="fa fa-github"></i></a>
+
+
+        </div>
         <div class="container  text-center">
-                <h3 class="margin">What Am I?</h3>
+                <h3 class="margin">My Background</h3>
                 <p> Being in the marketing/sales industry for over 18 years I have finally decided it was time to
                         freshen things up. After discovering my passion for web development, I couldn’t get enough. In
                         order to shorten the learning curve I decided to take the leap and study with Coding Dojo(a full
@@ -216,46 +225,98 @@
                 </p></br>
 
         </div>
+        <div class="container-fluid">
+                <div class="row">
+                  <div class="col">
+                        <div class="skills_wrapper">
+                                <div class="skillbar" data-percent="85%">
+                                        <div class="skillbar-title">HTML</div>
+                                        <div class="skill-bar-percent">85%</div>
+                                        <div class="skillbar-bar" style="width: 85%"></div>
+                                </div>
+                                <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title">css</div>
+                                        <div class="skill-bar-percent">80%</div>
+                                        <div class="skillbar-bar" style="width: 80%"></div>
+                                </div>
+                                <div class="skillbar" data-percent="70%">
+                                        <div class="skillbar-title">JavaScript/jQuery</div>
+                                        <div class="skill-bar-percent">70%</div>
+                                        <div class="skillbar-bar" style="width: 70%"></div>
+                                </div>
+                                <div class="skillbar" data-percent="50%">
+                                        <div class="skillbar-title">bootstrap</div>
+                                        <div class="skill-bar-percent">50%</div>
+                                        <div class="skillbar-bar" style="width: 50%"></div>
+                                </div>
         
-        <div class="skills_wrapper">
-                <div class="skillbar" data-percent="55%">
-                        <div class="skillbar-title">HTML & CSS</div>
-                        <div class="skill-bar-percent">85%</div>
-                        <div class="skillbar-bar" style="width: 85%"></div>
-                </div>
-                <div class="skillbar" data-percent="80%">
-                        <div class="skillbar-title">JavaScript</div>
-                        <div class="skill-bar-percent">70%</div>
-                        <div class="skillbar-bar" style="width: 70%"></div>
-                </div>
-                <div class="skillbar" data-percent="40%">
-                        <div class="skillbar-title">Photography</div>
-                        <div class="skill-bar-percent">40%</div>
-                        <div class="skillbar-bar" style="width: 40%"></div>
-                </div>
-                <div class="skillbar" data-percent="70%">
-                        <div class="skillbar-title">branding</div>
-                        <div class="skill-bar-percent">70%</div>
-                        <div class="skillbar-bar" style="width: 70%"></div>
-                </div>
-                <div class="btn-group dropup">
-                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                                <li><a href="/about_me">Go to Bio</a></li>
+                        </div>
+                  </div>
+                  <div class="col">
+                        <div class="skills_wrapper">
+                                <div class="skillbar" data-percent="55%">
+                                        <div class="skillbar-title">HTML & CSS</div>
+                                        <div class="skill-bar-percent">85%</div>
+                                        <div class="skillbar-bar" style="width: 85%"></div>
+                                </div>
+                                <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title">JavaScript</div>
+                                        <div class="skill-bar-percent">70%</div>
+                                        <div class="skillbar-bar" style="width: 70%"></div>
+                                </div>
+                                <div class="skillbar" data-percent="40%">
+                                        <div class="skillbar-title">Photography</div>
+                                        <div class="skill-bar-percent">40%</div>
+                                        <div class="skillbar-bar" style="width: 40%"></div>
+                                </div>
+                                <div class="skillbar" data-percent="70%">
+                                        <div class="skillbar-title">branding</div>
+                                        <div class="skill-bar-percent">70%</div>
+                                        <div class="skillbar-bar" style="width: 70%"></div>
+                                </div>
         
-                        </ul>
+                        </div>
+                  </div>
+                
+                
+                  <div class="col">
+                        <div class="skills_wrapper">
+                                <div class="skillbar" data-percent="100%">
+                                        <div class="skillbar-title">Desire to learn</div>
+                                        <div class="skill-bar-percent">100%</div>
+                                        <div class="skillbar-bar" style="width: 100%"></div>
+                                </div>
+                                <div class="skillbar" data-percent="90%">
+                                        <div class="skillbar-title">Problem-solving</div>
+                                        <div class="skill-bar-percent">90%</div>
+                                        <div class="skillbar-bar" style="width: 90%"></div>
+                                </div>
+                                <div class="skillbar" data-percent="100%">
+                                        <div class="skillbar-title">Team Player</div>
+                                        <div class="skill-bar-percent">100%</div>
+                                        <div class="skillbar-bar" style="width: 100%"></div>
+                                </div>
+                                <div class="skillbar" data-percent="95%">
+                                        <div class="skillbar-title">Punctuality</div>
+                                        <div class="skill-bar-percent">95%</div>
+                                        <div class="skillbar-bar" style="width: 95%"></div>
+                                </div>
         
-                </div>
-        </div>
+                        </div>
+                  </div>
+               
+              </div>
+        
+         
+       
+
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
 
-        
 
 
-        
+
+
 
 
 </body>
