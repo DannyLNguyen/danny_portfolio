@@ -38,9 +38,7 @@
                                         <li class="nav-item">
                                                 <a class="nav-link" href="/about_me">About Me</a>
                                         </li>
-                                        <li class="nav-item">
-                                                <a class="nav-link" href="#">Projects</a>
-                                        </li>
+
 
                                 </ul>
                         </div>
@@ -51,7 +49,7 @@
 
         <div class="conatiner">
 
-                <div class="jumbotron text-center hoverable p-4">
+                <div class="container-fluid bg-5 maxWidth ">
 
 
                         <div class="row">
@@ -87,11 +85,12 @@
 
 
                                         <div class="text-center">
-                                            
+
                                                 <a class="btn btn-primary btn-lg"
                                                         onClick="parent.location='mailto:dannylenguyen626@gmail.com?'"
                                                         role="button">Email Me</a>
-                                                <a class="btn btn-primary btn-lg" role="button" href="{% static 'images/Danny_Resume.pdf' %}"
+                                                <a class="btn btn-primary btn-lg" role="button"
+                                                        href="{% static 'images/Danny_Resume.pdf' %}"
                                                         download="Danny Nguyen's resume">Download my Resume</a>
 
 
@@ -225,93 +224,123 @@
                 </p></br>
 
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid maxWidth">
                 <div class="row">
-                  <div class="col">
-                        <div class="skills_wrapper">
-                                <div class="skillbar" data-percent="85%">
-                                        <div class="skillbar-title">HTML</div>
-                                        <div class="skill-bar-percent">85%</div>
-                                        <div class="skillbar-bar" style="width: 85%"></div>
-                                </div>
-                                <div class="skillbar" data-percent="80%">
-                                        <div class="skillbar-title">css</div>
-                                        <div class="skill-bar-percent">80%</div>
-                                        <div class="skillbar-bar" style="width: 80%"></div>
-                                </div>
-                                <div class="skillbar" data-percent="70%">
-                                        <div class="skillbar-title">JavaScript/jQuery</div>
-                                        <div class="skill-bar-percent">70%</div>
-                                        <div class="skillbar-bar" style="width: 70%"></div>
-                                </div>
-                                <div class="skillbar" data-percent="50%">
-                                        <div class="skillbar-title">bootstrap</div>
-                                        <div class="skill-bar-percent">50%</div>
-                                        <div class="skillbar-bar" style="width: 50%"></div>
-                                </div>
-        
-                        </div>
-                  </div>
-                  <div class="col">
-                        <div class="skills_wrapper">
-                                <div class="skillbar" data-percent="55%">
-                                        <div class="skillbar-title">HTML & CSS</div>
-                                        <div class="skill-bar-percent">85%</div>
-                                        <div class="skillbar-bar" style="width: 85%"></div>
-                                </div>
-                                <div class="skillbar" data-percent="80%">
-                                        <div class="skillbar-title">JavaScript</div>
-                                        <div class="skill-bar-percent">70%</div>
-                                        <div class="skillbar-bar" style="width: 70%"></div>
-                                </div>
-                                <div class="skillbar" data-percent="40%">
-                                        <div class="skillbar-title">Photography</div>
-                                        <div class="skill-bar-percent">40%</div>
-                                        <div class="skillbar-bar" style="width: 40%"></div>
-                                </div>
-                                <div class="skillbar" data-percent="70%">
-                                        <div class="skillbar-title">branding</div>
-                                        <div class="skill-bar-percent">70%</div>
-                                        <div class="skillbar-bar" style="width: 70%"></div>
-                                </div>
-        
-                        </div>
-                  </div>
-                
-                
-                  <div class="col">
-                        <div class="skills_wrapper">
-                                <div class="skillbar" data-percent="100%">
-                                        <div class="skillbar-title">Desire to learn</div>
-                                        <div class="skill-bar-percent">100%</div>
-                                        <div class="skillbar-bar" style="width: 100%"></div>
-                                </div>
-                                <div class="skillbar" data-percent="90%">
-                                        <div class="skillbar-title">Problem-solving</div>
-                                        <div class="skill-bar-percent">90%</div>
-                                        <div class="skillbar-bar" style="width: 90%"></div>
-                                </div>
-                                <div class="skillbar" data-percent="100%">
-                                        <div class="skillbar-title">Team Player</div>
-                                        <div class="skill-bar-percent">100%</div>
-                                        <div class="skillbar-bar" style="width: 100%"></div>
-                                </div>
-                                <div class="skillbar" data-percent="95%">
-                                        <div class="skillbar-title">Punctuality</div>
-                                        <div class="skill-bar-percent">95%</div>
-                                        <div class="skillbar-bar" style="width: 95%"></div>
-                                </div>
-        
-                        </div>
-                  </div>
-               
-              </div>
-        
-         
-       
+                        <div class="col">
+                                <div class="skills_wrapper">
+                                        <div class="skillbar" data-percent="85%">
+                                                <div class="skillbar-title">HTML</div>
+                                                <div class="skill-bar-percent">85%</div>
+                                                <div class="skillbar-bar" style="width: 85%"></div>
+                                        </div>
+                                        <div class="skillbar" data-percent="80%">
+                                                <div class="skillbar-title">css</div>
+                                                <div class="skill-bar-percent">80%</div>
+                                                <div class="skillbar-bar" style="width: 80%"></div>
+                                        </div>
+                                        <div class="skillbar" data-percent="70%">
+                                                <div class="skillbar-title">JavaScript/jQuery</div>
+                                                <div class="skill-bar-percent">70%</div>
+                                                <div class="skillbar-bar" style="width: 70%"></div>
+                                        </div>
+                                        <div class="skillbar" data-percent="50%">
+                                                <div class="skillbar-title">bootstrap</div>
+                                                <div class="skill-bar-percent">50%</div>
+                                                <div class="skillbar-bar" style="width: 50%"></div>
+                                        </div>
 
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+                                </div>
+                        </div>
+                        <div class="col">
+                                <div class="skills_wrapper">
+                                        <div class="skillbar" data-percent="55%">
+                                                <div class="skillbar-title">HTML & CSS</div>
+                                                <div class="skill-bar-percent">85%</div>
+                                                <div class="skillbar-bar" style="width: 85%"></div>
+                                        </div>
+                                        <div class="skillbar" data-percent="80%">
+                                                <div class="skillbar-title">JavaScript</div>
+                                                <div class="skill-bar-percent">70%</div>
+                                                <div class="skillbar-bar" style="width: 70%"></div>
+                                        </div>
+                                        <div class="skillbar" data-percent="40%">
+                                                <div class="skillbar-title">Photography</div>
+                                                <div class="skill-bar-percent">40%</div>
+                                                <div class="skillbar-bar" style="width: 40%"></div>
+                                        </div>
+                                        <div class="skillbar" data-percent="70%">
+                                                <div class="skillbar-title">branding</div>
+                                                <div class="skill-bar-percent">70%</div>
+                                                <div class="skillbar-bar" style="width: 70%"></div>
+                                        </div>
+
+                                </div>
+                        </div>
+
+
+                        <div class="col">
+                                <div class="skills_wrapper">
+                                        <div class="skillbar" data-percent="100%">
+                                                <div class="skillbar-title">Desire to learn</div>
+                                                <div class="skill-bar-percent">100%</div>
+                                                <div class="skillbar-bar" style="width: 100%"></div>
+                                        </div>
+                                        <div class="skillbar" data-percent="90%">
+                                                <div class="skillbar-title">Problem-solving</div>
+                                                <div class="skill-bar-percent">90%</div>
+                                                <div class="skillbar-bar" style="width: 90%"></div>
+                                        </div>
+                                        <div class="skillbar" data-percent="100%">
+                                                <div class="skillbar-title">Team Player</div>
+                                                <div class="skill-bar-percent">100%</div>
+                                                <div class="skillbar-bar" style="width: 100%"></div>
+                                        </div>
+                                        <div class="skillbar" data-percent="95%">
+                                                <div class="skillbar-title">Punctuality</div>
+                                                <div class="skill-bar-percent">95%</div>
+                                                <div class="skillbar-bar" style="width: 95%"></div>
+                                        </div>
+
+                                </div>
+                        </div>
+                        <div class="container pf-1 text-center">
+                                <h2>My Projects</h2>
+                               
+
+                                <!-- Portfolio Gallery Grid -->
+                                <div class="row">
+                                        <div class="column">
+                                                <div class="content">
+                                                        <h3>The Dad Hack</h3>
+                                                        <img class="proj_img"src="{% static 'images/the_dad_life.jpeg' %}" alt="Mountains"
+                                                                style="width:100%">
+                                                        
+                                                    
+                                                </div>
+                                        </div>
+                                        <div class="column">
+                                                <div class="content">
+                                                        <h3>Stadium Chasers</h3>
+                                                        <img class="proj_img" src="{% static 'images/stadium_chasers.jpeg' %}" alt="Lights" style="width:100%">
+                                                        
+                                                       
+                                                </div>
+                                        </div>
+                                       
+                                      
+                                       
+                                </div>
+                        </div>
+
+
+
+
+
+
+
+
+                        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+                        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
 
 
 
