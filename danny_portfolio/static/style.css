@@ -8,12 +8,12 @@ body {
       p {font-size: 16px;}
       .margin {margin-bottom: 45px;}
       .bg-1 { 
-        background-color: #999; /* Green */
+        
         color: #ffffff;
       }
       .bg-2 { 
-        background-color: #474e5d; /* Dark Blue */
-        color: #ffffff;
+        
+        color:  #555555;
       }
       .bg-3 { 
         background-color: #ffffff; /* White */
